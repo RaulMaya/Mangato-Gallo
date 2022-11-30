@@ -42,9 +42,11 @@ body {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     font-size: 1.25rem;
+    transition: 0.5s;
   }
   
   nav li:hover {
+    transition: 0.5s;
     font-weight: bolder;
   }
   
@@ -107,6 +109,7 @@ body {
     color: black;
     border: black solid 2px;
     cursor: pointer;
+    transition: 0.7s;
   }
   
   section:first-of-type button:hover {
@@ -115,6 +118,7 @@ body {
     color: rgb(255, 255, 255);
     border: rgb(255, 255, 255) solid 2px;
     cursor: pointer;
+    transition: 0.7s;
   }
   
   section:last-of-type article {
