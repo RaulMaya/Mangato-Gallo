@@ -128,3 +128,188 @@ body {
   section:last-of-type img {
     background-color: gainsboro;
   }
+
+  
+.women-collection,
+.men-collection,
+.disney-collection {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+.disney-collection .img-back {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 99;
+}
+
+.disney-collection:hover .img-back {
+  display: inline;
+}
+
+.women-collection .img-back {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 99;
+}
+
+.women-collection:hover .img-back {
+  display: inline;
+}
+
+.men-collection .img-back {
+  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 99;
+}
+
+.men-collection:hover .img-back {
+  display: inline;
+}
+
+article {
+  flex: 1;
+
+}
+
+section:last-of-type article:nth-child(2) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+footer {
+  background-color: white;
+  border-top: solid black 4px;
+  display: flex;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer div {
+  flex: 1;
+}
+
+footer h2 a {
+  text-decoration: none;
+  color: crimson;
+}
+
+footer div:nth-child(2) {
+  text-align: end;
+}
+
+footer img {
+  width: 10rem;
+  position: absolute;
+  margin-bottom: auto;
+  margin-top: auto;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+
+@media (max-width:1450px) {
+  header > img {
+    width: 70rem;
+  }
+}
+
+@media (max-width:1280px) {
+  header > img {
+    width: 50rem;
+  }
+}
+
+
+@media (max-width:900px) {
+  header > img {
+    width: 40rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+  
+}
+
+
+@media (max-width:780px) {
+  header > img {
+    width: 30rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  nav li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+}
+
+@media (max-width:772px) {
+  section:last-of-type article:nth-child(2) {
+    margin-left: 1rem;
+    margin-right: 0rem;
+  }
+}
+
+@media (max-width:746px) {
+  section:last-of-type article:nth-child(2) {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+
+@media (max-width:690px) {
+  nav li {
+    font-size: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+  
+  footer h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:580px) {
+  header > img {
+    width: 23rem;
+  }
+  nav li {
+    font-size: 0.80rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  section:last-of-type article:nth-child(2) {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  span {
+    font-size: 0.35rem;
+  }
+}
